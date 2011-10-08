@@ -3,7 +3,7 @@
 void do_jailbreak(GtkWidget *button) {
 	if (strcmp(gtk_button_get_label(button), "Jailbreak succeeded, exit") == 0) {
 		gtk_main_quit();
-		exit(1);
+		exit(0); // yay, if success, why report error?
 	}
 	if (strcmp(gtk_button_get_label(button), "Failed") == 0) {
 		gtk_main_quit();
